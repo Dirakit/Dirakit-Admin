@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="assets/custom.css">
+<link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="semantic/semantic.min.js"></script>
+<script type="text/javascript" src="assets/custom.js"></script>
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+<script type="text/javascript" src="amcharts/amchart.js"></script>
+<link rel="icon" type="image/png" href="assets/image/favicon.png">
+	<title>Dirakit Admin</title>
+</head>
+<body>
+<div class="ui sidebar inverted vertical menu">
+	<div class="bg-admin-logo">
+		<img src="assets/image/admin-logo.png" class="admin-logo">
+	</div>
+	<a class="item">
+		<img src="assets/image/menu1.png" class="list-menu">
+	</a>
+	<a class="item">
+		<img src="assets/image/menu2.png" class="list-menu">
+	</a>
+	<a class="item">
+		<img src="assets/image/menu3.png" class="list-menu">
+	</a>
+	<a class="item">
+		<img src="assets/image/menu4.png" class="list-menu">
+	</a>
+	<a class="item">
+		<img src="assets/image/menu5.png" class="list-menu">
+	</a>
+	<a class="item">
+		<img src="assets/image/menu6.png" class="list-menu">
+	</a>
+</div>
+<div class="pusher">
+	<div class="header">
+		<div class="menu-bar">
+			<a id="menu-sidebar" class="item">
+				<i class="content icon"></i>
+			</a>
+			<a href="#">
+				<img src="assets/image/logout-logo.png" class="logout-logo"> Logout
+			</a>
+		</div>
+	</div>
+	<div class="main-background">
+		<div class="dashboard-content">
+			<div class="welcome-text">
+				Welcome To Dashboard !<br>
+				Selamat datang Dirakit Admin, Anda memiliki 2 inbox dan 30s notifikasi yan belum dibaca.
+			</div>
+			<div class="ui grid">
+				<div class="four wide column">
+					<div class="bg-four-block"></div>
+				</div>
+				<div class="four wide column">
+					<div class="bg-four-block"></div>
+				</div>
+				<div class="four wide column">
+					<div class="bg-four-block"></div>
+				</div>
+				<div class="four wide column">
+					<div class="bg-four-block"></div>
+				</div>
+			</div>
+			<div class="bg-chart">
+				<div id="chartdiv"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	$('#menu-sidebar').click(function(){
+		$('.ui.sidebar').sidebar('toggle');
+	});
+</script>
+<script>
+	callamcharts('#chartdiv');
+</script>
+</body>
+</html>
