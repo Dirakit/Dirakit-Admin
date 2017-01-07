@@ -1,6 +1,7 @@
 .bg-admin-logo{
 	height: 50px;
 	background-color: #00B7EC;
+	margin-bottom: 10px; 
 }
 
 .admin-logo{
@@ -13,7 +14,7 @@
 
 .list-menu{
 	height: 15px;
-	width: auto;
+	width: 15px;
 }
 
 .header{
