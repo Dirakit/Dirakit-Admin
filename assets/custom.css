@@ -21,11 +21,19 @@
 	height: 50px;
 }
 
-.menu-bar{
+.menu-bar-right, .menu-bar-left{
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+
+.menu-bar-right{
+	float: right;
+}
+
+.menu-bar-left{
+	float: left;
 }
 
 .logout-logo{
