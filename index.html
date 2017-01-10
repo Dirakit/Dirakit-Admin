@@ -2,38 +2,13 @@
 <html>
 <head>
 
-<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
- <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-<script src="semantic/dist/semantic.min.js"></script>
-
-<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
-<script src="https://www.amcharts.com/lib/3/serial.js"></script>
-<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
 <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
-<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
-
-<script type="text/javascript" src="assets/custom.js"></script>
-<script type="text/javascript" src="amcharts/amchart.js"></script>
 <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 <link rel="stylesheet" type="text/css" href="assets/custom.css">
-
-
-<script>
-	activate_sidebar();
-</script>
-<script>
-	call_amcharts('#chartdiv');
-</script>
-
 <link rel="icon" type="image/png" href="assets/image/favicon.png">
 	<title>Dirakit Admin</title>
+	
 </head>
 <body>
 <div class="ui sidebar inverted vertical menu">
@@ -70,7 +45,7 @@
 					<i class="content icon"></i>
 				</a>
 			</div>
-			<div class="left floated right aligned eight wide column">
+			<div class="right floated right aligned eight wide column">
 				<a class="item">
 					<i class="inbox icon"></i>
 				</a>
@@ -92,16 +67,24 @@
 			</div>
 			<div class="ui grid">
 				<div class="four wide column">
-					<div class="bg-four-block"></div>
+					<div class="bg-four-block">
+						<img src="assets/images/visitor-icon.png" class="statistic-icon">
+					</div>
 				</div>
 				<div class="four wide column">
-					<div class="bg-four-block"></div>
+					<div class="bg-four-block">
+						<img src="assets/images/content-icon.png" class="statistic-icon">
+					</div>
 				</div>
 				<div class="four wide column">
-					<div class="bg-four-block"></div>
+					<div class="bg-four-block">
+						<img src="assets/images/user-icon.png" class="statistic-icon">
+					</div>
 				</div>
 				<div class="four wide column">
-					<div class="bg-four-block"></div>
+					<div class="bg-four-block">
+						<img src="assets/images/activity-icon.png" class="statistic-icon">
+					</div>
 				</div>
 			</div>
 			<div class="bg-chart">
@@ -115,6 +98,29 @@
 		</div>
 	</div>
 </div>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+ <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+<script type="text/javascript" src="assets/custom.js"></script>
+<script type="text/javascript" src="amcharts/amchart.js"></script>
+<script>
+	activate_sidebar();
+</script>
+<script>
+	call_amcharts('#chartdiv');
+</script>
 </body>
 </html>
 

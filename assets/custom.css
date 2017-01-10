@@ -48,6 +48,11 @@
 	margin: auto;
 }
 
+.statistic-icon{
+	width: 70px;
+	height: 70px;
+}
+
 .bg-chart{
 	margin-top: 15px;
 	margin-left: 20px;
