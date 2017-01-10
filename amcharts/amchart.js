@@ -1,4 +1,4 @@
-function callamcharts(chartdiv) {
+function call_amcharts(chartdiv) {
     // body...
     var chart = AmCharts.makeChart("chartdiv", {
     "type": "serial",

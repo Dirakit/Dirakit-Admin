@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script>
-	$('#menu-sidebar').click(function(){
-		$('.ui.sidebar').sidebar('toggle');
-	});
-</script>
-<script>
-	callamcharts('#chartdiv');
-</script>
+
 <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -17,17 +10,28 @@
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 <script src="semantic/dist/semantic.min.js"></script>
+
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
 <script src="https://www.amcharts.com/lib/3/serial.js"></script>
 <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
-<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
 <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
 <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
-<link rel="stylesheet" type="text/css" href="assets/custom.css">
+
 <script type="text/javascript" src="assets/custom.js"></script>
 <script type="text/javascript" src="amcharts/amchart.js"></script>
+<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="assets/custom.css">
+
+
+<script>
+	activate_sidebar();
+</script>
+<script>
+	call_amcharts('#chartdiv');
+</script>
+
 <link rel="icon" type="image/png" href="assets/image/favicon.png">
 	<title>Dirakit Admin</title>
 </head>
@@ -60,21 +64,24 @@
 </div>
 <div class="pusher">
 	<div class="header">
-		<div class="menu-bar-left">
-			<a id="menu-sidebar" class="item">
-				<i class="content icon"></i>
-			</a>
-		</div>
-		<div class="menu-bar-right">
-			<a class="item">
-				<i class="inbox icon"></i>
-			</a>
-			<a class="item">
-				<i class="alarm icon"></i>
-			</a>
-			<a href="#">
-				<i class="sign out icon"></i>Logout
-			</a>
+		<div class="ui right aligned grid">
+			<div class="left floated left aligned eight wide column">
+				<a id="menu-sidebar" class="item">
+					<i class="content icon"></i>
+				</a>
+			</div>
+			<div class="left floated right aligned eight wide column">
+				<a class="item">
+					<i class="inbox icon"></i>
+				</a>
+				<a class="item">
+					<i class="alarm icon"></i>
+				</a>
+				<a href="#">
+					<i class="sign out icon"></i>Logout
+				</a>
+			</div>
+			
 		</div>
 	</div>
 	<div class="main-background">

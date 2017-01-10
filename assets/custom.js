@@ -1,4 +1,8 @@
 function activate_sidebar() {
 	// body...
-	$('.ui.sidebar').sidebar('toggle');
+	$(document).ready(function(){
+		$('#menu-sidebar').click(function(){
+			$('.ui.sidebar').sidebar('toggle');
+		});		
+	})
 }
