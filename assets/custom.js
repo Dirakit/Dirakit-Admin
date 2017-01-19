@@ -6,3 +6,12 @@ function activate_sidebar() {
 		});		
 	})
 }
+
+function activate_dropdown() {
+	// body...
+	$(document).ready(function(){
+		$('.ui.selection.dropdown').click(function(){
+			$('.ui.dropdown').dropdown('show');
+		});		
+	})
+}
