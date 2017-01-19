@@ -5,8 +5,8 @@ function call_amcharts(chartdiv) {
     "theme": "light",
     "marginRight": 40,
     "marginLeft": 40,
-    "autoMarginOffset": 20,
-    "mouseWheelZoomEnabled":true,
+    "autoMarginOffset": 0,
+    "mouseWheelZoomEnabled":false,
     "dataDateFormat": "YYYY-MM-DD",
     "valueAxes": [{
         "id": "v1",
