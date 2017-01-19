@@ -5,7 +5,7 @@ function call_amcharts(chartdiv) {
     "theme": "light",
     "marginRight": 40,
     "marginLeft": 40,
-    "autoMarginOffset": 0,
+    "autoMarginOffset": 20,
     "mouseWheelZoomEnabled":false,
     "dataDateFormat": "YYYY-MM-DD",
     "valueAxes": [{
@@ -25,6 +25,7 @@ function call_amcharts(chartdiv) {
           "adjustBorderColor":false,
           "color":"#ffffff"
         },
+        "fillAlphas": 0.2,
         "bullet": "round",
         "bulletBorderAlpha": 1,
         "bulletColor": "#FFFFFF",
@@ -60,11 +61,6 @@ function call_amcharts(chartdiv) {
         "limitToGraph":"g1",
         "valueLineAlpha":0.2,
         "valueZoomable":true
-    },
-    "valueScrollbar":{
-      "oppositeAxis":false,
-      "offset":50,
-      "scrollbarHeight":10
     },
     "categoryField": "date",
     "categoryAxis": {
