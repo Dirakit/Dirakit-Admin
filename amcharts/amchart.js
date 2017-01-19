@@ -25,7 +25,7 @@ function call_amcharts(chartdiv) {
           "adjustBorderColor":false,
           "color":"#ffffff"
         },
-        "fillAlphas": 0.2,
+        "fillAlphas": 0.6,
         "bullet": "round",
         "bulletBorderAlpha": 1,
         "bulletColor": "#FFFFFF",
