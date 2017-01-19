@@ -54,8 +54,7 @@
 }
 
 .statistic-space, .caption-space{
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding: 15px 0;
 }
 
 .statistic-space{
@@ -77,4 +76,22 @@
 #chartdiv {
     width   : 100%;
     height  : 500px;
+}
+
+.bg-list{
+	margin-top: 15px;
+	width: 100%;
+	min-height: 600px;
+	padding-top: 15px;
+	background-color: #ffffff;
+}
+
+.block-title{
+	margin-bottom: 15px;
+	padding: 0 15px;
+}
+
+.image-size{
+	width: 60px;
+	height: auto;
 }
