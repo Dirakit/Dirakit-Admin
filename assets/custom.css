@@ -86,9 +86,13 @@
 	background-color: #ffffff;
 }
 
-.block-title{
+.block-head{
 	margin-bottom: 15px;
 	padding: 0 15px;
+}
+
+.block-head-text{
+	padding-top: 5px;
 }
 
 .image-size{
