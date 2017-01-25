@@ -10,8 +10,20 @@ function activate_sidebar() {
 function activate_dropdown() {
 	// body...
 	$(document).ready(function(){
-		$('.ui.selection.dropdown').click(function(){
-			$('.ui.dropdown').dropdown('show');
+		$('#project_filter').click(function(){
+			$('#project_filter').dropdown();
+		});		
+	})
+
+	$(document).ready(function(){
+		$('#feed1').click(function(){
+			$('#feed1').dropdown();
+		});		
+	})
+
+	$(document).ready(function(){
+		$('#feed2').click(function(){
+			$('#feed2').dropdown();
 		});		
 	})
 }
