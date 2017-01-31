@@ -733,10 +733,13 @@
 <script type="text/javascript" src="assets/custom.js"></script>
 <script type="text/javascript" src="amcharts/amchart.js"></script>
 <script>
-	activate_feature();
-</script>
-<script>
-	call_amcharts('#chartdiv');
+	$(document).ready(function(){
+		$('#menu-sidebar').click(function(){
+			$('.ui.sidebar').sidebar('toggle');
+		});
+		$('.dropdown').dropdown();
+		call_amcharts('#chartdiv');		
+	})
 </script>
 </body>
 </html>
