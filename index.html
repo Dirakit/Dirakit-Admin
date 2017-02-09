@@ -10,7 +10,7 @@
 	<title>Dirakit Admin</title>
 </head>
 <body>
-<div class="ui sidebar inverted vertical menu" style="margin: none">
+<div class="ui visible sidebar inverted vertical menu" style="width: 20%">
 	<div class="bg-admin-logo">
 		<img src="assets/image/admin-logo.png" class="admin-logo">
 	</div>
@@ -52,7 +52,7 @@
 		</a>
 	</div>
 </div>
-<div class="pusher">
+<div class="pusher" style="margin-left: 20%">
 	<div class="custom-header">
 		<div class="ui right aligned grid">
 			<div class="left floated left aligned eight wide column">
@@ -734,11 +734,9 @@
 <script type="text/javascript" src="amcharts/amchart.js"></script>
 <script>
 	$(document).ready(function(){
-		$('#menu-sidebar').click(function(){
-			$('.ui.sidebar').sidebar('toggle');
-		});
-		$('.dropdown').dropdown();
-		call_amcharts('#chartdiv');		
+		sidebarController();
+		call_amcharts('#chartdiv');
+		$('.dropdown').dropdown();		
 	})
 </script>
 </body>
